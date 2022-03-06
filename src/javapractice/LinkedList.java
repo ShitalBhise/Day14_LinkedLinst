@@ -7,7 +7,7 @@ public class LinkedList {
 	/*
 	 * Created local variable Head
 	 */
-	MyNode headMyNode;
+	Node headMyNode;
 
 	/**
 	 * addNode - this method is created to add data to linedList
@@ -90,9 +90,16 @@ public class LinkedList {
 	 * Deleting node from start of the linkedList
 	 */
 
-	public MyNode deleteNodeStart() {
-		System.out.println("Deleted node from start : " + headMyNode.data);
-		headMyNode = headMyNode.next;
-		return headMyNode;
+	public void deleteNodeEnd() {
+		/* creating pointer object assigning head to it */
+		Node pointer = headMyNode;
+		Node prev = null;
+
+		while (pointer.next != null) {
+			prev = pointer;
+			pointer = pointer.next;
+		}
+		System.out.println("Deleted node from end : " + pointer.data);
+		prev.next = null;
 	}
 }

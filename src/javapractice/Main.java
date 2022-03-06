@@ -29,7 +29,7 @@ public class Main {
 		/*
 		 * 3. Printing linedList after adding nodes
 		 */
-		list.deleteNodeStart();
+		list.deleteNodeEnd();
 		list.printLinkedList();
 
 	}

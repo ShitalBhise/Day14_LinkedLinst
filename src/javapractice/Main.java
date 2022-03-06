@@ -22,15 +22,14 @@ public class Main {
 		/*
 		 * 2. Adding nodes to linkedList
 		 */
-		MyNode head = list.addNode(null, 30);
-		list.addNode(head, 56);
-		list.addNode(head, 70);
+		list.addNodeLast(56);
+		list.addNodeLast(30);
+		list.addNodeLast(70);
 
 		/*
 		 * 3. Printing linedList after adding nodes
 		 */
-		list.printLinkedList(head);
-		System.out.println();
+		list.printLinkedList();
 
 	}
 

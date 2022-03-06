@@ -20,15 +20,16 @@ public class Main {
 		LinkedList list = new LinkedList();
 
 		/*
-		 * 2. Adding nodes to linkedList
+		 * 2. Adding nodes to linksedList
 		 */
 		list.addNodeLast(56);
+		list.addNodeLast(30);
 		list.addNodeLast(70);
-		list.insertMidAnywhere(list.headMyNode.next, 30);
 
 		/*
 		 * 3. Printing linedList after adding nodes
 		 */
+		list.deleteNodeStart();
 		list.printLinkedList();
 
 	}

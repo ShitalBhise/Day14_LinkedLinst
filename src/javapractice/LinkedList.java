@@ -1,5 +1,7 @@
 package javapractice;
 
+import org.w3c.dom.Node;
+
 public class LinkedList {
 
 	/*
@@ -69,7 +71,7 @@ public class LinkedList {
 
 	}
 
-	public void insertMidAnywhere(MyNode prev_node, int new_data) {
+	public void insertMidAnywhere(Node prev_node, int new_data) {
 
 		if (prev_node == null) {
 			System.out.println("previousNode can not be Null,we can not insert ");
@@ -82,5 +84,15 @@ public class LinkedList {
 
 		/* make next of prev_node as new_node */
 		prev_node.next = new_node;
+	}
+
+	/*
+	 * Deleting node from start of the linkedList
+	 */
+
+	public MyNode deleteNodeStart() {
+		System.out.println("Deleted node from start : " + headMyNode.data);
+		headMyNode = headMyNode.next;
+		return headMyNode;
 	}
 }

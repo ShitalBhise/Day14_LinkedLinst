@@ -7,7 +7,7 @@ public class MyNode {
 	public MyNode(int data) {
 		super();
 		this.data = data;
-		this.next = null;
+
 		next = null;
 	}
 

@@ -17,20 +17,19 @@ public class Main {
 		/*
 		 * 1. Creating Lined list
 		 */
+		System.out.println("Welcome!!");
 		LinkedList list = new LinkedList();
 
 		/*
 		 * 2. Adding nodes to linkedList
 		 */
-		MyNode head = list.addNode(null, 30);
-		list.addNode(head, 56);
-		list.addNode(head, 70);
-
+		list.addNodeStart(70);
+		list.addNodeStart(30);
+		list.addNodeStart(56);
 		/*
 		 * 3. Printing linedList after adding nodes
 		 */
-		list.printLinkedList(head);
-		System.out.println();
+		list.printLinkedList();
 
 	}
 

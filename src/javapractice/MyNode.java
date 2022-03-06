@@ -10,4 +10,5 @@ public class MyNode {
 		this.next = null;
 		next = null;
 	}
+
 }

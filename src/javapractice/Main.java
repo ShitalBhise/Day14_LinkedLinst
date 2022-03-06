@@ -23,8 +23,8 @@ public class Main {
 		 * 2. Adding nodes to linkedList
 		 */
 		list.addNodeLast(56);
-		list.addNodeLast(30);
 		list.addNodeLast(70);
+		list.insertMidAnywhere(list.headMyNode.next, 30);
 
 		/*
 		 * 3. Printing linedList after adding nodes
@@ -32,5 +32,4 @@ public class Main {
 		list.printLinkedList();
 
 	}
-
 }
